@@ -12,9 +12,12 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tinacms": "^2.2.5"
   },
   "devDependencies": {
+    "@tinacms/cli": "^1.6.5",
+    "@types/node": "^22.7.2",
     "prettier": "^2.8.8"
   },
   "keywords": [
@@ -22,10 +25,10 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "tinacms build -c \"gatsby build\"",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "start": "gatsby develop",
+    "start": "tinacms dev -c \"gatsby develop\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

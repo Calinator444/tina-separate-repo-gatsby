@@ -16,3 +16,8 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
 }
+
+const express = require("express");
+exports.onCreateDevServer = ({ app }) => {
+  app.use("/admin", express.static("public/admin"));
+};
