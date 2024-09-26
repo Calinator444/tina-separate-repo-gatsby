@@ -12,5 +12,6 @@ https://tina.io/docs/guides/separate-content-repo/
 5. You should now be able to run `npm run build` and see that it is hitting TinaCloud, successfully building.
 
 ## **Note:** If you want to run locally, you will need to pull your content repo, and reference it in your `tina/config.ts`
+## **Note:** This Gatsby site currently doesn't use data from TinaCMS in the content.
 
 ## Visual Editing is not currently available for Gatsby
