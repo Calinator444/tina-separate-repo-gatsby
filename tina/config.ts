@@ -11,12 +11,12 @@ export default defineConfig({
   client: { skip: true },
   branch,
 
-  localContentPath: "../../tina-separate-repo",
+  localContentPath: "../../SSW Rules Content/SSW.Rules.Content",
 
   // Get this from tina.io
-  clientId: process.env.TINA_CLIENT_ID,
+  // clientId: process.env.TINA_CLIENT_ID,
   // Get this from tina.io
-  token: process.env.TINA_TOKEN,
+  // token: process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
